@@ -7,12 +7,12 @@ body{
         /* background-color: #fa9bab; */
 }
 
-/* navbar */
 
 nav {
     display: flex;
     background-color: rgb(253, 228, 245);
     justify-content: space-around;
+    /* padding: 20px 0; */
     color: rgb(211, 139, 204);
     width: 100%;
     align-items: center;
@@ -46,15 +46,6 @@ nav .logo {
 
 nav ul li a:hover {
     color: rgb(232, 105, 141);
-}
-
-@media screen and (max-width: 768px) {
-    nav {
-        position: sticky;
-        top: 0;
-        left: 0;
-        width: 100%;
-    }
 }
 
 
@@ -132,7 +123,6 @@ nav ul li a:hover {
         align-items: center;
         background-color: rgb(253, 228, 245);
         z-index: -1;
-        transform: translateX(100%);
         transition: all 1s;
         opacity: 0;
     }
@@ -248,20 +238,24 @@ margin-bottom: 10px;
 }
 
 .project {
-    max-width: 320px;
+   max-width: 500px;
     margin: 50px auto;
     justify-content: space-between;
     font-family:  "Tiny5", sans-serif; 
     color: #666;
     padding: 10px;
     border-radius: 2px;
-    font-size: medium;
 }
 
 .card {
     display: flex;
     justify-content: center;
     gap: 15px;
+}
+
+.card img {
+    width: 500px;
+    height: auto;
 }
 
 .card-1 .card-2{
@@ -293,9 +287,10 @@ margin-bottom: 10px;
         align-items: center;
     }
     
-    .project {
-        width: 80%;
-     }
+    .card img {
+    width: 100%;
+    height: auto;
+}
 }
 
 /* Skill */
@@ -349,8 +344,8 @@ margin-bottom: 10px;
     border-color: rgb(241, 163, 232);
     color: #8b8787;
     border-radius: 30px;
-    padding-left: 15px;
-    font-weight: 500;
+    padding-left: 25px;
+    font-weight: 500px;
 }
 
 .contact-input:hover {
@@ -370,13 +365,4 @@ margin-bottom: 10px;
 
 .submit:hover {
     background-color: #f4accf;
-}
-
-@media screen and (max-width: 768px) {
-    .contact-input {
-        width: 90%;
-        height: 45px;
-        padding-left: 15px;
-    }
-
 }
