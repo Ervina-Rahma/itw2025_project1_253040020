@@ -7,6 +7,7 @@ body{
         /* background-color: #fa9bab; */
 }
 
+/* navbar */
 
 nav {
     display: flex;
@@ -46,6 +47,15 @@ nav .logo {
 
 nav ul li a:hover {
     color: rgb(232, 105, 141);
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
 }
 
 
