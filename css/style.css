@@ -239,13 +239,14 @@ margin-bottom: 10px;
 }
 
 .project {
-   max-width: 500px;
+    max-width: 320px;
     margin: 50px auto;
     justify-content: space-between;
     font-family:  "Tiny5", sans-serif; 
     color: #666;
     padding: 10px;
     border-radius: 2px;
+    font-size: medium;
 }
 
 .card {
@@ -283,6 +284,9 @@ margin-bottom: 10px;
         align-items: center;
     }
     
+    .project {
+        width: 80%;
+     }
 }
 
 /* Skill */
@@ -336,8 +340,8 @@ margin-bottom: 10px;
     border-color: rgb(241, 163, 232);
     color: #8b8787;
     border-radius: 30px;
-    padding-left: 25px;
-    font-weight: 500px;
+    padding-left: 15px;
+    font-weight: 500;
 }
 
 .contact-input:hover {
@@ -357,4 +361,13 @@ margin-bottom: 10px;
 
 .submit:hover {
     background-color: #f4accf;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-input {
+        width: 90%;
+        height: 45px;
+        padding-left: 15px;
+    }
+
 }
